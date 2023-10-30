@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  snowy:
+    build: .
+    environment:
+    - SLACK_BOT_TOKEN=${SLACK_BOT_TOKEN}
+    - SLACK_APP_TOKEN=${SLACK_APP_TOKEN}
+    - SNOWFLAKE_USER=${SNOWFLAKE_USER}
+    - SNOWFLAKE_PASSWORD=${SNOWFLAKE_PASSWORD}
+    - SNOWFLAKE_ACCOUNT=${SNOWFLAKE_ACCOUNT}
